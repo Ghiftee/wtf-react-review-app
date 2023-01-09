@@ -8,8 +8,7 @@ import { FaTimes } from 'react-icons/fa';
 function ReviewItem({item}) {
   const {deleteReview} = useContext(ReviewContext)
   
-  return (
-    
+  return ( 
     <Card>
       <div className="num-display">{item.rating}</div>
         <button onClick={() => {deleteReview(item.id)}} className='close'>
@@ -17,7 +16,6 @@ function ReviewItem({item}) {
         </button>
       <p>{item.text}</p>
     </Card>
-  
   )
 }
 

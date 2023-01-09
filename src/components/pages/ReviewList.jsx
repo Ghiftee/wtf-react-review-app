@@ -4,20 +4,16 @@ import ReviewItem from './ReviewItem';
 
 function ReviewList() {
   const {review} = useContext(ReviewContext)
-  
     if (!review || review.length === 0){
-        return <p>No review Yet</p>
+      return <p>No review Yet</p>
     }
   return (
-    <>
     <div>
-        {review.map((item) =>(
-            <ReviewItem key={item.id} item={item} />
-        ))}
+      {review.map((item) =>(
+        <ReviewItem key={item.id} item={item} />
+      ))}
     </div>
-    </>
   )
 }
-
 
 export default ReviewList;

@@ -26,15 +26,14 @@ ul {
 header {
   height: 70px;
   width: 100%;
-  /* display: flex; */
   justify-content: space-between;
   align-items: center;
   margin: 10px;
   padding: 10px;
   text-align: center;
 }
+
 .head {
-  
   font-size: large;
   text-align: center;
   color: #202142;
@@ -221,15 +220,11 @@ input:focus {
   color: rebeccapurple;
 }
 
-/* FIX: Remove position: absolute to keep about icon at the bottom of the
- * document */
 .about-link {
   display: flex;
   justify-content: flex-end;
 }
 
-/* FIX: Remove position: absolute to keep about icon at the bottom of the
- * document */
 .about-link a {
   color: #ccc;
   cursor: pointer;
